@@ -5,7 +5,7 @@
 PROGRAM = NovaType
 
 # Source files
-SOURCES = main.c
+SOURCES = main.c editor.c text_tags.c formatting.c file_io.c callbacks.c
 
 # Object files
 OBJECTS = $(SOURCES:.c=.o)
@@ -39,8 +39,8 @@ all: $(PROGRAM)
 $(PROGRAM): $(OBJECTS)
 	$(CC) $(OBJECTS) -o $(PROGRAM) $(LDFLAGS)
 
-# Compile source files
-%.o: %.c
+
+%.o: %.c editor.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
 # Debug build
