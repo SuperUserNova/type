@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=NovaType
+Comment=A modern text editor
+Exec=novatype
+Icon=text-editor-symbolic
+Terminal=false
+Type=Application
+Categories=Utility;TextEditor;
+MimeType=text/plain;
+StartupNotify=true
